@@ -1,22 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 
-const name={name:'Masud Rana',age:22,colore:'Greeen'}
-const nameStyle={
-  color:'green',
-  backgroundColor:'black'
-}
+
 
 function App() {
   return (
     <div className="App">
-      <h1>React Core Concepts</h1>
-      <hr></hr>
-      <h3 style={nameStyle}>{name.name}</h3>
-      <h3>{name.age}</h3>
-      <h3 style={{color:'red'}}>{name.colore}</h3>
+      <Student></Student>
+      <Student></Student>
+      <h3>Name:Masud Rana</h3>
+      <Student></Student>
     </div>
   );
+}
+function Student(){
+  return(
+    <div className='student'>
+      <h3>Name:Ajis Ali</h3>
+      <p>Roll:4455</p>
+    </div>
+  )
 }
 
 export default App;
