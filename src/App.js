@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
+const name={name:'Masud Rana',age:22,colore:'Greeen'}
+const nameStyle={
+  color:'green',
+  backgroundColor:'black'
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React Core Concepts</h1>
+      <hr></hr>
+      <h3 style={nameStyle}>{name.name}</h3>
+      <h3>{name.age}</h3>
+      <h3 style={{color:'red'}}>{name.colore}</h3>
     </div>
   );
 }
